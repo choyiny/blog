@@ -79,18 +79,16 @@
 
 <h4 id="preparing-the-workspace:d58d30b554ea9e7cf820237195e7418b">Preparing the workspace</h4>
 
-<p>Clone that repo to your computer, using commandline or <a href="https://desktop.github.com/">Github Desktop</a>. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.</p>
-
 <p>Make a new file in the blog directory called &lsquo;config.yml&rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)</p>
 
 <pre><code>---
 baseurl: &quot;http://[username].github.io/blog&quot;
 title: &quot;my blog&quot;
-footnotereturnlinkcontents: &quot;↩&quot;
 permalinks:
   post: /:year/:month/:title/
 params:
   Subtitle: &quot;Tu etais formidable&quot;
+  description: &quot;this is my blog&quot;
   AuthorName: &quot;choyin&quot;
   GitHubUser: &quot;hkminegod&quot;
   SidebarRecentLimit: 5
@@ -101,7 +99,9 @@ params:
 
 <h4 id="blogging-with-a-theme:d58d30b554ea9e7cf820237195e7418b">Blogging with a theme</h4>
 
-<p>Now, let&rsquo;s choose a theme for your blog! Hugo itself does not have any capability to create a website from nothing, so choose a nice looking theme from their official <a href="http://themes.gohugo.io/">Theme Showcase</a> For me, I downloaded <a href="http://themes.gohugo.io/hyde/">HYDE</a> to work with, because I thought it was great. Extract the zip file, and copy everything over to the root folder.</p>
+<p>Now, let&rsquo;s choose a theme for your blog! Hugo itself does not have any capability to create a website from nothing, so choose a nice looking theme from their official <a href="http://themes.gohugo.io/">Theme Showcase</a> For me, I downloaded <a href="http://themes.gohugo.io/hyde/">HYDE</a> to work with, because I thought it was great.</p>
+
+<p>Make a new folder <code>themes</code> and put the whole theme folder there.</p>
 
 <h4 id="your-first-post:d58d30b554ea9e7cf820237195e7418b">Your first post</h4>
 
@@ -109,7 +109,7 @@ params:
 
 <pre><code>---
 title: &quot;Hello world!&quot;
-date: &quot;2015-122-21&quot;
+date: &quot;2015-12-21&quot;
 description: &quot;I am a description&quot;
 categories:
     - &quot;tutorial&quot;
@@ -133,11 +133,13 @@ This will house the contents of your post, formattable in markdown.
 <pre><code>Web Server is available at http://127.0.0.1:1313/blog/
 </code></pre>
 
-<p>Using any browser of your choice, navigate to that link and you will be able to see if your blog works! If you like it, type this last command in terminal:</p>
+<p>Using any browser of your choice, navigate to that link and you will be able to see if your blog works! If you like it, type this last command in terminal (replace hyde with your installed theme):</p>
 
-<p><code>$ hugo</code></p>
+<p><code>$ hugo -t hyde</code></p>
 
-<p>This will prepare Hugo for pushing to your blog repo hosted on github. Finally, push your changes to the branch <code>gh-pages</code>! You&rsquo;re done! Your site will be live momentarily at http://[username].github.io/blog! Congratulations, that was easy!</p>
+<p>Using commandline or <a href="https://desktop.github.com/">Github Desktop</a>, push the <code>public</code> folder to the blog&rsquo;s <code>gh-pages</code> branch. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.</p>
+
+<p>You&rsquo;re done! Your site will be live momentarily at http://[username].github.io/blog! Congratulations, that was easy!</p>
 
 <h4 id="extras:d58d30b554ea9e7cf820237195e7418b">Extras</h4>
 
