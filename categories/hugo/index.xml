@@ -31,7 +31,7 @@
 
 &lt;h4 id=&#34;creating-a-repository-on-github:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Creating a repository on Github&lt;/h4&gt;
 
-&lt;p&gt;I created an empty repository on github named &amp;ldquo;blog&amp;rdquo;. This will ensure your blog will be acccessible at http://[username].github.io/blog. Alternatively you can create a new repo (if you don&amp;rsquo;t have one) named [username].github.io, then, your blog will be directly accessible at http://[username].github.io. My example can be viewed &lt;a href=&#34;https://github.com/hkminegod/blog&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I created an empty repository on github named &amp;ldquo;blog&amp;rdquo;. This will ensure your blog will be acccessible at http://[username].github.io/blog. Alternatively you can create a new repo (if you don&amp;rsquo;t have one) named [username].github.io, then, your blog will be directly accessible at http://[username].github.io. My repository can be viewed &lt;a href=&#34;https://github.com/hkminegod/blog&#34;&gt;here&lt;/a&gt;, and website &lt;a href=&#34;https://pages.choy.in/blog&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&#34;preparing-the-workspace:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Preparing the workspace&lt;/h4&gt;
 
