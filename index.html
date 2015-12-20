@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.14" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> choyin &middot; choyin </title>
+
+  
+  <link rel="stylesheet" href="https://pages.choy.in/blog/css/poole.css">
+  <link rel="stylesheet" href="https://pages.choy.in/blog/css/syntax.css">
+  <link rel="stylesheet" href="https://pages.choy.in/blog/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="https://pages.choy.in/blog/index.xml" rel="alternate" type="application/rss+xml" title="choyin" />
+</head>
+
+<body class="theme-base-08">
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://pages.choy.in/blog/"><h1>choyin</h1></a>
+      <p class="lead">
+       welcome to my blog 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="posts">
+
+      
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://pages.choy.in/blog/posts/20151221/">
+        How to deploy a Hugo blog using Github Pages?
+      </a>
+    </h1>
+
+    <span class="post-date">Mon, Dec 21, 2015</span>
+
+    
+
+<p>Hello! Today I am going to teach you how to setup Hugo on Github Pages, a static blog (website) engine. Well, who doesn&rsquo;t like blogging on an open source platform with open source software?</p>
+
+<p>This tutorial assumes you have basic understanding of git and github. If you don&rsquo;t know git, here is an <a href="https://try.github.io/levels/1/challenges/1">amazing crashcourse</a> for you!</p>
+
+<h4 id="download-and-install-hugo:d58d30b554ea9e7cf820237195e7418b">Download and install Hugo</h4>
+
+<p>This is a relatively easy task if you have a mac and <a href="http://brew.sh/">Homebrew</a>, which you can install with a single command in terminal. After installing homebrew, type this command into terminal:</p>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<p>Wait for a few seconds and you&rsquo;ve done it! Alternatively you can download the software packages of Hugo for other platforms such as Windows (not as pro) or Linux <a href="https://github.com/spf13/hugo/releases">here</a>.</p>
+
+<h4 id="creating-a-repository-on-github:d58d30b554ea9e7cf820237195e7418b">Creating a repository on Github</h4>
+
+<p>I created an empty repository on github named &ldquo;blog&rdquo;. This will ensure your blog will be acccessible at http://[username].github.io/blog. Alternatively you can create a new repo (if you don&rsquo;t have one) named [username].github.io, then, your blog will be directly accessible at http://[username].github.io. My example can be viewed <a href="https://github.com/hkminegod/blog">here</a></p>
+
+<h4 id="preparing-the-workspace:d58d30b554ea9e7cf820237195e7418b">Preparing the workspace</h4>
+
+<p>Clone that repo to your computer, using commandline or <a href="https://desktop.github.com/">Github Desktop</a>. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.</p>
+
+<p>Make a new file in the blog directory called &lsquo;config.yml&rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)</p>
+
+<pre><code>---
+baseurl: &quot;http://[username].github.io/blog&quot;
+title: &quot;my blog&quot;
+footnotereturnlinkcontents: &quot;↩&quot;
+permalinks:
+  post: /:year/:month/:title/
+params:
+  Subtitle: &quot;Tu etais formidable&quot;
+  AuthorName: &quot;choyin&quot;
+  GitHubUser: &quot;hkminegod&quot;
+  SidebarRecentLimit: 5
+---
+</code></pre>
+
+<p>Edit parameteres to your own likings, save and exit the file. Next, create two folders. One inside the root folder named <code>content</code>, and one inside <code>content</code> named <code>posts</code>. All your blog posts will be put in the folder <code>posts</code>.</p>
+
+<h4 id="blogging-with-a-theme:d58d30b554ea9e7cf820237195e7418b">Blogging with a theme</h4>
+
+<p>Now, let&rsquo;s choose a theme for your blog! Hugo itself does not have any capability to create a website from nothing, so choose a nice looking theme from their official <a href="http://themes.gohugo.io/">Theme Showcase</a> For me, I downloaded <a href="http://themes.gohugo.io/hyde/">HYDE</a> to work with, because I thought it was great. Extract the zip file, and copy everything over to the root folder.</p>
+
+<h4 id="your-first-post:d58d30b554ea9e7cf820237195e7418b">Your first post</h4>
+
+<p>Hugo makes it very easy to create a blogpost. Just make a markdown file named anything, and put it under <code>root/content/posts</code>. I like to make the file name the date, like so: <code>20151221.md</code> For the contents on the file, paste in this and adjust to your likings:</p>
+
+<pre><code>---
+title: &quot;Hello world!&quot;
+date: &quot;2015-122-21&quot;
+description: &quot;I am a description&quot;
+categories:
+    - &quot;tutorial&quot;
+    - &quot;hugo&quot;
+---
+This will house the contents of your post, formattable in markdown.
+</code></pre>
+
+<h4 id="deploy-hugo-on-github:d58d30b554ea9e7cf820237195e7418b">Deploy Hugo on Github</h4>
+
+<p>Using terminal, navigate to your blog root directory. For beginners that is not familiar with terminal, here is an example:</p>
+
+<p><code>$ cd workspace/blog</code></p>
+
+<p>Basically what this does is point terminal to the folder <code>workspace</code> and then <code>workspace/blog</code>. After that, type in terminal</p>
+
+<p><code>$ hugo server --watch</code></p>
+
+<p>It will output a bunch of stuff, along with a line like this.</p>
+
+<pre><code>Web Server is available at http://127.0.0.1:1313/blog/
+</code></pre>
+
+<p>Using any browser of your choice, navigate to that link and you will be able to see if your blog works! If you like it, type this last command in terminal:</p>
+
+<p><code>$ hugo</code></p>
+
+<p>This will prepare Hugo for pushing to your blog repo hosted on github. Finally, push your changes to the branch <code>gh-pages</code>! You&rsquo;re done! Your site will be live momentarily at http://[username].github.io/blog! Congratulations, that was easy!</p>
+
+<h4 id="extras:d58d30b554ea9e7cf820237195e7418b">Extras</h4>
+
+<p>If you have a custom domain like me, you can point your repository to your own domain using a CNAME. Create a new file called <code>CNAME</code> in your repository&rsquo;s root folder, and put your domain name in the file. For me, it is <code>pages.choy.in</code>. Modify the CNAME in your domain&rsquo;s DNS records and make sure that domain points to <code>[uesrname].github.io</code></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://pages.choy.in/blog/posts/20151220/">
+        Google Code-in 2015!
+      </a>
+    </h1>
+
+    <span class="post-date">Sun, Dec 20, 2015</span>
+
+    <p>Bonjour le monde!
+Hello World!
+你好世界!</p>
+
+<p>This year is my first year joining Google Code-in, and I look forward to learning many skills for my studies in university next year! This year, I want to specifically improve my participation and contribution to the open source community, and have decided to work with FOSSASIA, a mentoring organisation for this year&rsquo;s Google Code-in.</p>
+
+<p>This year&rsquo;s Google Code-in is going to be interesting! I regret not having discovered this amazing and rewarding event earlier! This will also be my last Google Code-in :s</p>
+
+  </div>
+  
+</div>
+</div>
+
+  </body>
+</html>
