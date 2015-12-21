@@ -7,6 +7,7 @@ This repo serves as a host for my blog at [pages.choy.in](https://pages.choy.in)
 
 ### Credits
 [Hugo](http://gohugo.io/), a fast and modern static website engine
+
 [Hyde](https://github.com/spf13/hyde), the best Hugo theme imo
 
 ### Tutorial
