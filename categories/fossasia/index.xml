@@ -5,16 +5,34 @@
     <link>https://pages.choy.in/blog/categories/fossasia/</link>
     <description>Recent content in Fossasia on choyin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pages.choy.in/blog/categories/fossasia/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>FOSSASIA and Google Code-in 2015</title>
       <link>https://pages.choy.in/blog/posts/fossasia/</link>
-      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://pages.choy.in/blog/posts/fossasia/</guid>
-      <description>&lt;p&gt;Officially joining the FOSSASIA community with me added to the &lt;a href=&#34;http://gci15.fossasia.org&#34;&gt;FOSSASIA Google Code-in 2015 website!&lt;/a&gt;! This is my third task and I&amp;rsquo;m wondering if I can finish 30 quality submissions for a chance for the &lt;em&gt;cough&lt;/em&gt; hoodie &lt;em&gt;cough&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Officially joining the FOSSASIA community with me added to the &lt;a href=&#34;http://gci15.fossasia.org&#34;&gt;FOSSASIA Google Code-in 2015 website!&lt;/a&gt;! Having loads of fun here completing tasks. Also, just finishing off my fourth task with this simple python program:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Are you old enough to drink?&amp;quot;)
+
+age = int(input(&amp;quot;Please enter your age: &amp;quot;))
+
+drinkingage = int(18)
+whencanidrink = drinkingage - age
+
+
+if age &amp;gt;= drinkingage:
+  print(&amp;quot;You can drink, congratulations!&amp;quot;)
+
+elif 1 &amp;lt; age &amp;lt; drinkingage:
+  print(&amp;quot;You cannot drink, but you can in &amp;quot; + str(whencanidrink) + &amp;quot; years!&amp;quot;)
+
+else:
+  print(&amp;quot;Your age is not recognizable by us!!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;If you are between 13 and 17 years old you should join Google Code-in right &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;here&lt;/a&gt;. Dont hesitate, contributing to the Open Source Community is fun!&lt;/p&gt;
 </description>
