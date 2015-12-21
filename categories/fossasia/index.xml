@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fossasia on choyin</title>
+    <link>https://pages.choy.in/blog/categories/fossasia/</link>
+    <description>Recent content in Fossasia on choyin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 22 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pages.choy.in/blog/categories/fossasia/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FOSSASIA and Google Code-in 2015</title>
+      <link>https://pages.choy.in/blog/posts/fossasia/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.choy.in/blog/posts/fossasia/</guid>
+      <description>&lt;p&gt;Officially joining the FOSSASIA community with me added to the &lt;a href=&#34;http://gci15.fossasia.org&#34;&gt;FOSSASIA Google Code-in 2015 website!&lt;/a&gt;! This is my third task and I&amp;rsquo;m wondering if I can finish 30 quality submissions for a chance for the &lt;em&gt;cough&lt;/em&gt; hoodie &lt;em&gt;cough&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are between 13 and 17 years old you should join Google Code-in right &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;here&lt;/a&gt;. Dont hesitate, contributing to the Open Source Community is fun!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

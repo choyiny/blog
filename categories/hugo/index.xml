@@ -10,17 +10,17 @@
     
     <item>
       <title>How to deploy a Hugo blog using Github Pages?</title>
-      <link>https://pages.choy.in/blog/posts/20151221/</link>
+      <link>https://pages.choy.in/blog/posts/how-to-deploy-hugo/</link>
       <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://pages.choy.in/blog/posts/20151221/</guid>
+      <guid>https://pages.choy.in/blog/posts/how-to-deploy-hugo/</guid>
       <description>
 
 &lt;p&gt;Hello! Today I am going to teach you how to setup Hugo on Github Pages, a static blog (website) engine. Well, who doesn&amp;rsquo;t like blogging on an open source platform with open source software?&lt;/p&gt;
 
 &lt;p&gt;This tutorial assumes you have basic understanding of git and github. If you don&amp;rsquo;t know git, here is an &lt;a href=&#34;https://try.github.io/levels/1/challenges/1&#34;&gt;amazing crashcourse&lt;/a&gt; for you!&lt;/p&gt;
 
-&lt;h4 id=&#34;download-and-install-hugo:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Download and install Hugo&lt;/h4&gt;
+&lt;h4 id=&#34;download-and-install-hugo:b970542703247f031f3abee5b7b4e900&#34;&gt;Download and install Hugo&lt;/h4&gt;
 
 &lt;p&gt;This is a relatively easy task if you have a mac and &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;, which you can install with a single command in terminal. After installing homebrew, type this command into terminal:&lt;/p&gt;
 
@@ -29,16 +29,16 @@
 
 &lt;p&gt;Wait for a few seconds and you&amp;rsquo;ve done it! Alternatively you can download the software packages of Hugo for other platforms such as Windows (not as pro) or Linux &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;creating-a-repository-on-github:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Creating a repository on Github&lt;/h4&gt;
+&lt;h4 id=&#34;creating-a-repository-on-github:b970542703247f031f3abee5b7b4e900&#34;&gt;Creating a repository on Github&lt;/h4&gt;
 
 &lt;p&gt;I created an empty repository on github named &amp;ldquo;blog&amp;rdquo;. This will ensure your blog will be acccessible at http://[username].github.io/blog. Alternatively you can create a new repo (if you don&amp;rsquo;t have one) named [username].github.io, then, your blog will be directly accessible at http://[username].github.io. My repository can be viewed &lt;a href=&#34;https://github.com/hkminegod/blog&#34;&gt;here&lt;/a&gt;, and website &lt;a href=&#34;https://pages.choy.in/blog&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;preparing-the-workspace:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Preparing the workspace&lt;/h4&gt;
+&lt;h4 id=&#34;preparing-the-workspace:b970542703247f031f3abee5b7b4e900&#34;&gt;Preparing the workspace&lt;/h4&gt;
 
 &lt;p&gt;Make a new file in the blog directory called &amp;lsquo;config.yml&amp;rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;---
-baseurl: &amp;quot;http://[username].github.io/blog&amp;quot;
+baseurl: &amp;quot;http://[username].github.io/blog/&amp;quot;
 title: &amp;quot;my blog&amp;quot;
 permalinks:
   post: /:year/:month/:title/
@@ -53,13 +53,13 @@ params:
 
 &lt;p&gt;Edit parameteres to your own likings, save and exit the file. Next, create two folders. One inside the root folder named &lt;code&gt;content&lt;/code&gt;, and one inside &lt;code&gt;content&lt;/code&gt; named &lt;code&gt;posts&lt;/code&gt;. All your blog posts will be put in the folder &lt;code&gt;posts&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;blogging-with-a-theme:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Blogging with a theme&lt;/h4&gt;
+&lt;h4 id=&#34;blogging-with-a-theme:b970542703247f031f3abee5b7b4e900&#34;&gt;Blogging with a theme&lt;/h4&gt;
 
 &lt;p&gt;Now, let&amp;rsquo;s choose a theme for your blog! Hugo itself does not have any capability to create a website from nothing, so choose a nice looking theme from their official &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Theme Showcase&lt;/a&gt; For me, I downloaded &lt;a href=&#34;http://themes.gohugo.io/hyde/&#34;&gt;HYDE&lt;/a&gt; to work with, because I thought it was great.&lt;/p&gt;
 
 &lt;p&gt;Make a new folder &lt;code&gt;themes&lt;/code&gt; and put the whole theme folder there.&lt;/p&gt;
 
-&lt;h4 id=&#34;your-first-post:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Your first post&lt;/h4&gt;
+&lt;h4 id=&#34;your-first-post:b970542703247f031f3abee5b7b4e900&#34;&gt;Your first post&lt;/h4&gt;
 
 &lt;p&gt;Hugo makes it very easy to create a blogpost. Just make a markdown file named anything, and put it under &lt;code&gt;root/content/posts&lt;/code&gt;. I like to make the file name the date, like so: &lt;code&gt;20151221.md&lt;/code&gt; For the contents on the file, paste in this and adjust to your likings:&lt;/p&gt;
 
@@ -74,7 +74,7 @@ categories:
 This will house the contents of your post, formattable in markdown.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;deploy-hugo-on-github:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Deploy Hugo on Github&lt;/h4&gt;
+&lt;h4 id=&#34;deploy-hugo-on-github:b970542703247f031f3abee5b7b4e900&#34;&gt;Deploy Hugo on Github&lt;/h4&gt;
 
 &lt;p&gt;Using terminal, navigate to your blog root directory. For beginners that is not familiar with terminal, here is an example:&lt;/p&gt;
 
@@ -97,7 +97,7 @@ This will house the contents of your post, formattable in markdown.
 
 &lt;p&gt;You&amp;rsquo;re done! Your site will be live momentarily at http://[username].github.io/blog! Congratulations, that was easy!&lt;/p&gt;
 
-&lt;h4 id=&#34;extras:d58d30b554ea9e7cf820237195e7418b&#34;&gt;Extras&lt;/h4&gt;
+&lt;h4 id=&#34;extras:b970542703247f031f3abee5b7b4e900&#34;&gt;Extras&lt;/h4&gt;
 
 &lt;p&gt;If you have a custom domain like me, you can point your repository to your own domain using a CNAME. Create a new file called &lt;code&gt;CNAME&lt;/code&gt; in your repository&amp;rsquo;s root folder, and put your domain name in the file. For me, it is &lt;code&gt;pages.choy.in&lt;/code&gt;. Modify the CNAME in your domain&amp;rsquo;s DNS records and make sure that domain points to &lt;code&gt;[uesrname].github.io&lt;/code&gt;&lt;/p&gt;
 </description>

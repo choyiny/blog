@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>choyin</title>
-    <link>https://pages.choy.in/blog/</link>
-    <description>Recent content on choyin</description>
+    <title>Tutorial on choyin</title>
+    <link>https://pages.choy.in/blog/categories/tutorial/</link>
+    <description>Recent content in Tutorial on choyin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pages.choy.in/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>FOSSASIA and Google Code-in 2015</title>
-      <link>https://pages.choy.in/blog/posts/fossasia/</link>
-      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://pages.choy.in/blog/posts/fossasia/</guid>
-      <description>&lt;p&gt;Officially joining the FOSSASIA community with me added to the &lt;a href=&#34;http://gci15.fossasia.org&#34;&gt;FOSSASIA Google Code-in 2015 website!&lt;/a&gt;! This is my third task and I&amp;rsquo;m wondering if I can finish 30 quality submissions for a chance for the &lt;em&gt;cough&lt;/em&gt; hoodie &lt;em&gt;cough&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are between 13 and 17 years old you should join Google Code-in right &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;here&lt;/a&gt;. Dont hesitate, contributing to the Open Source Community is fun!&lt;/p&gt;
-</description>
-    </item>
+    <lastBuildDate>Mon, 21 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pages.choy.in/blog/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to deploy a Hugo blog using Github Pages?</title>
@@ -112,22 +100,6 @@ This will house the contents of your post, formattable in markdown.
 &lt;h4 id=&#34;extras:b970542703247f031f3abee5b7b4e900&#34;&gt;Extras&lt;/h4&gt;
 
 &lt;p&gt;If you have a custom domain like me, you can point your repository to your own domain using a CNAME. Create a new file called &lt;code&gt;CNAME&lt;/code&gt; in your repository&amp;rsquo;s root folder, and put your domain name in the file. For me, it is &lt;code&gt;pages.choy.in&lt;/code&gt;. Modify the CNAME in your domain&amp;rsquo;s DNS records and make sure that domain points to &lt;code&gt;[uesrname].github.io&lt;/code&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Google Code-in 2015!</title>
-      <link>https://pages.choy.in/blog/posts/20151220/</link>
-      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://pages.choy.in/blog/posts/20151220/</guid>
-      <description>&lt;p&gt;Bonjour le monde!
-Hello World!
-你好世界!&lt;/p&gt;
-
-&lt;p&gt;This year is my first year joining Google Code-in, and I look forward to learning many skills for my studies in university next year! This year, I want to specifically improve my participation and contribution to the open source community, and have decided to work with FOSSASIA, a mentoring organisation for this year&amp;rsquo;s Google Code-in.&lt;/p&gt;
-
-&lt;p&gt;This year&amp;rsquo;s Google Code-in is going to be interesting! I regret not having discovered this amazing and rewarding event earlier! This will also be my last Google Code-in :s&lt;/p&gt;
 </description>
     </item>
     
