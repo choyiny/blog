@@ -9,36 +9,6 @@
     <atom:link href="https://pages.choy.in/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>FOSSASIA and Google Code-in 2015</title>
-      <link>https://pages.choy.in/blog/posts/fossasia/</link>
-      <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://pages.choy.in/blog/posts/fossasia/</guid>
-      <description>&lt;p&gt;Officially joining the FOSSASIA community with me added to the &lt;a href=&#34;http://gci15.fossasia.org&#34;&gt;FOSSASIA Google Code-in 2015 website!&lt;/a&gt;! Having loads of fun here completing tasks. Also, just finishing off my fourth task with this simple python program:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Are you old enough to drink?&amp;quot;)
-
-age = int(input(&amp;quot;Please enter your age: &amp;quot;))
-
-drinkingage = int(18)
-whencanidrink = drinkingage - age
-
-
-if age &amp;gt;= drinkingage:
-  print(&amp;quot;You can drink, congratulations!&amp;quot;)
-
-elif 1 &amp;lt; age &amp;lt; drinkingage:
-  print(&amp;quot;You cannot drink, but you can in &amp;quot; + str(whencanidrink) + &amp;quot; years!&amp;quot;)
-
-else:
-  print(&amp;quot;Your age is not recognizable by us!!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you are between 13 and 17 years old you should join Google Code-in right &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;here&lt;/a&gt;. Dont hesitate, contributing to the Open Source Community is fun!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>How to deploy a Hugo blog using Github Pages?</title>
       <link>https://pages.choy.in/blog/posts/how-to-deploy-hugo/</link>
       <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
@@ -130,6 +100,38 @@ This will house the contents of your post, formattable in markdown.
 &lt;h4 id=&#34;extras:b970542703247f031f3abee5b7b4e900&#34;&gt;Extras&lt;/h4&gt;
 
 &lt;p&gt;If you have a custom domain like me, you can point your repository to your own domain using a CNAME. Create a new file called &lt;code&gt;CNAME&lt;/code&gt; in your repository&amp;rsquo;s root folder, and put your domain name in the file. For me, it is &lt;code&gt;pages.choy.in&lt;/code&gt;. Modify the CNAME in your domain&amp;rsquo;s DNS records and make sure that domain points to &lt;code&gt;[uesrname].github.io&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FOSSASIA and Google Code-in 2015</title>
+      <link>https://pages.choy.in/blog/posts/fossasia/</link>
+      <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://pages.choy.in/blog/posts/fossasia/</guid>
+      <description>&lt;p&gt;Officially joining the FOSSASIA community with me added to the &lt;a href=&#34;http://gci15.fossasia.org&#34;&gt;FOSSASIA Google Code-in 2015 website!&lt;/a&gt;! Having loads of fun here completing tasks. Here&amp;rsquo;s a program to see if you are old enough to drink:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Are you old enough to drink?&amp;quot;)
+
+age = int(input(&amp;quot;Please enter your age: &amp;quot;))
+
+drinkingage = int(18)
+whencanidrink = drinkingage - age
+
+
+if age &amp;gt;= drinkingage:
+  print(&amp;quot;You can drink, congratulations!&amp;quot;)
+
+elif 1 &amp;lt; age &amp;lt; drinkingage:
+  print(&amp;quot;You cannot drink, but you can in &amp;quot; + str(whencanidrink) + &amp;quot; years!&amp;quot;)
+
+else:
+  print(&amp;quot;Your age is not recognizable by us!!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also made a javascript program to turn on and off a lightbulb (pointless), you can check it out &lt;a href=&#34;https://pages.choy.in/GCI2015/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are between 13 and 17 years old you should join Google Code-in right &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;here&lt;/a&gt;. Dont hesitate, contributing to the Open Source Community is fun!&lt;/p&gt;
 </description>
     </item>
     
