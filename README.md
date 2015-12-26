@@ -2,7 +2,7 @@ blog.choyin
 ==========
 
 ### Introduction
-This repo serves as a host for my blog at [pages.choy.in](https://pages.choy.in/blog/) This blog is made for a task in Google Code-in 2015 for FOSSASIA.
+This repo serves as a host for my blog at [pages.choy.in/blog](https://pages.choy.in/blog/) This blog is made for tasks in Google Code-in 2015 for FOSSASIA.
 
 
 ### Credits
