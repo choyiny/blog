@@ -37,13 +37,21 @@ else:
 &lt;p&gt;If you are between 13 and 17 years old you should join Google Code-in right &lt;a href=&#34;https://codein.withgoogle.com/&#34;&gt;here&lt;/a&gt;. Dont hesitate, contributing to the Open Source Community is fun!&lt;/p&gt;
 
 &lt;p&gt;EDIT (29/12/2015): Below are repositories to all the tasks I have completed: (Tasks will be added here when I complete them)
-* &lt;a href=&#34;https://github.com/hkminegod/GCI2015/tree/gh-pages&#34;&gt;Javascript: Lights Out!&lt;/a&gt;
-* &lt;a href=&#34;https://pages.choy.in&#34;&gt;Website: Host a website with Jekyll on github using github pages&lt;/a&gt;
-* &lt;a href=&#34;https://pages.choy.in/blog/posts/how-to-deploy-hugo/&#34;&gt;Hugo: Deploy a blog using Hugo Github pages.&lt;/a&gt;
-* &lt;a href=&#34;http://gci15.fossasia.org/&#34;&gt;Website: Add your photo to the GCI FOSSASIA Site Student Section and Tweet about it&lt;/a&gt;
-* &lt;a href=&#34;https://github.com/hkminegod/GCI2015/tree/master/python&#34;&gt;Python: Your first program in an open source ide&lt;/a&gt;
-* &lt;a href=&#34;http://gci15.fossasia.org/&#34;&gt;Website: Add a &amp;ldquo;Thank you for contributing&amp;rdquo; in another language to the FOSSASIA GCI website&lt;/a&gt;
-* &lt;a href=&#34;https://github.com/hkminegod/GCI2015/tree/gh-pages&#34;&gt;Website: Get Geolocation from browser&lt;/a&gt;&lt;/p&gt;
+* &lt;a href=&#34;https://github.com/hkminegod/GCI2015/tree/gh-pages&#34;&gt;Javascript: Lights Out!&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://pages.choy.in&#34;&gt;Website: Host a website with Jekyll on github using github pages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://pages.choy.in/blog/posts/how-to-deploy-hugo/&#34;&gt;Hugo: Deploy a blog using Hugo Github pages.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://gci15.fossasia.org/&#34;&gt;Website: Add your photo to the GCI FOSSASIA Site Student Section and Tweet about it&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/hkminegod/GCI2015/tree/master/python&#34;&gt;Python: Your first program in an open source ide&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://gci15.fossasia.org/&#34;&gt;Website: Add a &amp;ldquo;Thank you for contributing&amp;rdquo; in another language to the FOSSASIA GCI website&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/hkminegod/GCI2015/tree/gh-pages&#34;&gt;Website: Get Geolocation from browser&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
