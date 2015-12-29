@@ -27,7 +27,7 @@
 &lt;pre&gt;&lt;code&gt;brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Wait for a few seconds and you&amp;rsquo;ve done it! Alternatively you can download the software packages of Hugo for other platforms such as Windows (not as pro) or Linux &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wait for a few minutes and you will have Hugo installed on your computer. Alternatively you can download the software packages of Hugo for other platforms such as Windows (not as pro) or Linux &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&#34;creating-a-repository-on-github:b970542703247f031f3abee5b7b4e900&#34;&gt;Creating a repository on Github&lt;/h4&gt;
 
@@ -35,29 +35,34 @@
 
 &lt;h4 id=&#34;preparing-the-workspace:b970542703247f031f3abee5b7b4e900&#34;&gt;Preparing the workspace&lt;/h4&gt;
 
-&lt;p&gt;Make a new file in the blog directory called &amp;lsquo;config.yml&amp;rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)&lt;/p&gt;
+&lt;p&gt;Make a folder on your desktop named &lt;code&gt;blog-hugo&lt;/code&gt;. Then, make a new file in the blog-hugo directory called &amp;lsquo;config.yml&amp;rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;---
 baseurl: &amp;quot;http://[username].github.io/blog/&amp;quot;
 title: &amp;quot;my blog&amp;quot;
-permalinks:
-  post: /:year/:month/:title/
 params:
   Subtitle: &amp;quot;Tu etais formidable&amp;quot;
   description: &amp;quot;this is my blog&amp;quot;
   AuthorName: &amp;quot;choyin&amp;quot;
-  GitHubUser: &amp;quot;hkminegod&amp;quot;
-  SidebarRecentLimit: 5
 ---
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Edit parameteres to your own likings, save and exit the file. Next, create two folders. One inside the root folder named &lt;code&gt;content&lt;/code&gt;, and one inside &lt;code&gt;content&lt;/code&gt; named &lt;code&gt;posts&lt;/code&gt;. All your blog posts will be put in the folder &lt;code&gt;posts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Edit the file to your own likings, save and exit the file. Here are some information for the various parameters:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl: //if you named your repo blog, then change [username] to your Github username
+title: //whatever title you want for your blog
+Subtitle: //Subtitle for your blog, you can leave it blank if you want
+description: //description of your blog, whatever you want
+AuthorName: //Your name, or nickname
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, create two folders in your &lt;code&gt;blog&lt;/code&gt; folder. One inside the root folder named &lt;code&gt;content&lt;/code&gt;, and one inside &lt;code&gt;content&lt;/code&gt; named &lt;code&gt;posts&lt;/code&gt;. All your blog posts will be put in the folder &lt;code&gt;posts&lt;/code&gt;. Hugo automatically recognizes files under the &lt;code&gt;content&lt;/code&gt; folder.&lt;/p&gt;
 
 &lt;h4 id=&#34;blogging-with-a-theme:b970542703247f031f3abee5b7b4e900&#34;&gt;Blogging with a theme&lt;/h4&gt;
 
 &lt;p&gt;Now, let&amp;rsquo;s choose a theme for your blog! Hugo itself does not have any capability to create a website from nothing, so choose a nice looking theme from their official &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Theme Showcase&lt;/a&gt; For me, I downloaded &lt;a href=&#34;http://themes.gohugo.io/hyde/&#34;&gt;HYDE&lt;/a&gt; to work with, because I thought it was great.&lt;/p&gt;
 
-&lt;p&gt;Make a new folder &lt;code&gt;themes&lt;/code&gt; and put the whole theme folder there.&lt;/p&gt;
+&lt;p&gt;Make a new folder &lt;code&gt;themes&lt;/code&gt; and put the whole theme folder there. Rename your downloaded theme folder to something simple, in my case, &lt;code&gt;Hyde&lt;/code&gt;. This will be useful when you run the command to build Hugo.&lt;/p&gt;
 
 &lt;h4 id=&#34;your-first-post:b970542703247f031f3abee5b7b4e900&#34;&gt;Your first post&lt;/h4&gt;
 
@@ -74,7 +79,9 @@ categories:
 This will house the contents of your post, formattable in markdown.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;deploy-hugo-on-github:b970542703247f031f3abee5b7b4e900&#34;&gt;Deploy Hugo on Github&lt;/h4&gt;
+&lt;p&gt;Save it, and you are ready to deploy the site!&lt;/p&gt;
+
+&lt;h4 id=&#34;deploying-the-site:b970542703247f031f3abee5b7b4e900&#34;&gt;Deploying the site&lt;/h4&gt;
 
 &lt;p&gt;Using terminal, navigate to your blog root directory. For beginners that is not familiar with terminal, here is an example:&lt;/p&gt;
 
@@ -93,7 +100,11 @@ This will house the contents of your post, formattable in markdown.
 
 &lt;p&gt;&lt;code&gt;$ hugo -t hyde&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Using commandline or &lt;a href=&#34;https://desktop.github.com/&#34;&gt;Github Desktop&lt;/a&gt;, push the &lt;code&gt;public&lt;/code&gt; folder to the blog&amp;rsquo;s &lt;code&gt;gh-pages&lt;/code&gt; branch. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.&lt;/p&gt;
+&lt;p&gt;You have now successfully deployed your site to your computer, available at the &lt;code&gt;/public&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;h4 id=&#34;push-hugo-to-your-github-repo:b970542703247f031f3abee5b7b4e900&#34;&gt;Push Hugo to your Github Repo&lt;/h4&gt;
+
+&lt;p&gt;Using commandline or &lt;a href=&#34;https://desktop.github.com/&#34;&gt;Github Desktop&lt;/a&gt;, push the &lt;code&gt;public&lt;/code&gt; folder to the repo&amp;rsquo;s &lt;code&gt;gh-pages&lt;/code&gt; branch. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.&lt;/p&gt;
 
 &lt;p&gt;You&amp;rsquo;re done! Your site will be live momentarily at http://[username].github.io/blog! Congratulations, that was easy!&lt;/p&gt;
 

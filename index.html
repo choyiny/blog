@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title> choyin &middot; choyin </title>
+  <title> blog &middot; choyin </title>
 
   
   <link rel="stylesheet" href="https://pages.choy.in/blog/css/poole.css">
@@ -61,7 +61,7 @@
 
     <span class="post-date">Mon, Dec 21, 2015</span>
 
-    <p>Officially joining the FOSSASIA community with me added to the <a href="http://gci15.fossasia.org">FOSSASIA Google Code-in 2015 website!</a>! Having loads of fun here completing tasks. Here&rsquo;s a program to see if you are old enough to drink:</p>
+    <p>Officially joining the FOSSASIA community with me added to the <a href="http://gci15.fossasia.org">FOSSASIA Google Code-in 2015 website!</a>! Completing Tasks are loads of fun Here&rsquo;s a program to see if you are old enough to drink:</p>
 
 <pre><code class="language-python">print(&quot;Are you old enough to drink?&quot;)
 
@@ -81,9 +81,16 @@ else:
   print(&quot;Your age is not recognizable by us!!&quot;)
 </code></pre>
 
-<p>I also made a javascript program to turn on and off a lightbulb (pointless), you can check it out <a href="https://pages.choy.in/GCI2015/">here</a></p>
-
 <p>If you are between 13 and 17 years old you should join Google Code-in right <a href="https://codein.withgoogle.com/">here</a>. Dont hesitate, contributing to the Open Source Community is fun!</p>
+
+<p>EDIT (29/12/2015): Below are repositories to all the tasks I have completed: (Tasks will be added here when I complete them)
+- <a href="https://github.com/hkminegod/GCI2015/tree/gh-pages">Javascript: Lights Out!</a>
+- <a href="https://pages.choy.in">Website: Host a website with Jekyll on github using github pages</a>
+- <a href="https://pages.choy.in/blog/posts/how-to-deploy-hugo/">Hugo: Deploy a blog using Hugo Github pages.</a>
+- <a href="http://gci15.fossasia.org/">Website: Add your photo to the GCI FOSSASIA Site Student Section and Tweet about it</a>
+- <a href="https://github.com/hkminegod/GCI2015/tree/master/python">Python: Your first program in an open source ide</a>
+- <a href="http://gci15.fossasia.org/">Website: Add a &ldquo;Thank you for contributing&rdquo; in another language to the FOSSASIA GCI website</a>
+- <a href="https://github.com/hkminegod/GCI2015/tree/gh-pages">Website: Get Geolocation from browser</a></p>
 
   </div>
   
@@ -109,7 +116,7 @@ else:
 <pre><code>brew install hugo
 </code></pre>
 
-<p>Wait for a few seconds and you&rsquo;ve done it! Alternatively you can download the software packages of Hugo for other platforms such as Windows (not as pro) or Linux <a href="https://github.com/spf13/hugo/releases">here</a>.</p>
+<p>Wait for a few minutes and you will have Hugo installed on your computer. Alternatively you can download the software packages of Hugo for other platforms such as Windows (not as pro) or Linux <a href="https://github.com/spf13/hugo/releases">here</a>.</p>
 
 <h4 id="creating-a-repository-on-github:b970542703247f031f3abee5b7b4e900">Creating a repository on Github</h4>
 
@@ -117,29 +124,34 @@ else:
 
 <h4 id="preparing-the-workspace:b970542703247f031f3abee5b7b4e900">Preparing the workspace</h4>
 
-<p>Make a new file in the blog directory called &lsquo;config.yml&rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)</p>
+<p>Make a folder on your desktop named <code>blog-hugo</code>. Then, make a new file in the blog-hugo directory called &lsquo;config.yml&rsquo; with the following plain-text using a text editor such as textedit or brackets: (make sure there are no tabs)</p>
 
 <pre><code>---
 baseurl: &quot;http://[username].github.io/blog/&quot;
 title: &quot;my blog&quot;
-permalinks:
-  post: /:year/:month/:title/
 params:
   Subtitle: &quot;Tu etais formidable&quot;
   description: &quot;this is my blog&quot;
   AuthorName: &quot;choyin&quot;
-  GitHubUser: &quot;hkminegod&quot;
-  SidebarRecentLimit: 5
 ---
 </code></pre>
 
-<p>Edit parameteres to your own likings, save and exit the file. Next, create two folders. One inside the root folder named <code>content</code>, and one inside <code>content</code> named <code>posts</code>. All your blog posts will be put in the folder <code>posts</code>.</p>
+<p>Edit the file to your own likings, save and exit the file. Here are some information for the various parameters:</p>
+
+<pre><code>baseurl: //if you named your repo blog, then change [username] to your Github username
+title: //whatever title you want for your blog
+Subtitle: //Subtitle for your blog, you can leave it blank if you want
+description: //description of your blog, whatever you want
+AuthorName: //Your name, or nickname
+</code></pre>
+
+<p>Next, create two folders in your <code>blog</code> folder. One inside the root folder named <code>content</code>, and one inside <code>content</code> named <code>posts</code>. All your blog posts will be put in the folder <code>posts</code>. Hugo automatically recognizes files under the <code>content</code> folder.</p>
 
 <h4 id="blogging-with-a-theme:b970542703247f031f3abee5b7b4e900">Blogging with a theme</h4>
 
 <p>Now, let&rsquo;s choose a theme for your blog! Hugo itself does not have any capability to create a website from nothing, so choose a nice looking theme from their official <a href="http://themes.gohugo.io/">Theme Showcase</a> For me, I downloaded <a href="http://themes.gohugo.io/hyde/">HYDE</a> to work with, because I thought it was great.</p>
 
-<p>Make a new folder <code>themes</code> and put the whole theme folder there.</p>
+<p>Make a new folder <code>themes</code> and put the whole theme folder there. Rename your downloaded theme folder to something simple, in my case, <code>Hyde</code>. This will be useful when you run the command to build Hugo.</p>
 
 <h4 id="your-first-post:b970542703247f031f3abee5b7b4e900">Your first post</h4>
 
@@ -156,7 +168,9 @@ categories:
 This will house the contents of your post, formattable in markdown.
 </code></pre>
 
-<h4 id="deploy-hugo-on-github:b970542703247f031f3abee5b7b4e900">Deploy Hugo on Github</h4>
+<p>Save it, and you are ready to deploy the site!</p>
+
+<h4 id="deploying-the-site:b970542703247f031f3abee5b7b4e900">Deploying the site</h4>
 
 <p>Using terminal, navigate to your blog root directory. For beginners that is not familiar with terminal, here is an example:</p>
 
@@ -175,7 +189,11 @@ This will house the contents of your post, formattable in markdown.
 
 <p><code>$ hugo -t hyde</code></p>
 
-<p>Using commandline or <a href="https://desktop.github.com/">Github Desktop</a>, push the <code>public</code> folder to the blog&rsquo;s <code>gh-pages</code> branch. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.</p>
+<p>You have now successfully deployed your site to your computer, available at the <code>/public</code> directory.</p>
+
+<h4 id="push-hugo-to-your-github-repo:b970542703247f031f3abee5b7b4e900">Push Hugo to your Github Repo</h4>
+
+<p>Using commandline or <a href="https://desktop.github.com/">Github Desktop</a>, push the <code>public</code> folder to the repo&rsquo;s <code>gh-pages</code> branch. I personally find Github Desktop less confusing for beginners, but using the command line has multiple advantages as well.</p>
 
 <p>You&rsquo;re done! Your site will be live momentarily at http://[username].github.io/blog! Congratulations, that was easy!</p>
 
